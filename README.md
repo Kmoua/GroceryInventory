@@ -5,10 +5,12 @@ It uses the Express framework and Jade template to output the products. Routers 
 
 This application utilizes Jade, Express, Node.js, and MongoDB. 
 
-# Install
-Download and install Node and npm (http://nodejs.org/#download). Then open terminal and type: node -v and npm -v to ensure it's installed.
+# Getting Started
+Install Node and npm (http://nodejs.org/#download). Then open terminal and type: node -v and npm -v to ensure it's installed.
 
 Install MongoDB using: npm install mongodb
+
+Start application with: npm start and view through http://localhost:3000/
 
 ![Screenshot](ProductView.jpg)
 ![Screenshot](UpdateProduct.jpg)
