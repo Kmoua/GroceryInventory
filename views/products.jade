@@ -1,0 +1,32 @@
+extends layout_form
+block content
+    .container
+      .content(style='padding: 30px;')
+            h2 Edit Products
+            p &nbsp; 
+            a.button(href='/crud/add',class="button") Add New
+            p &nbsp;    
+            table(cellpadding=10,border="1",cellspacing="10")
+                   
+                    tr
+                        th Title
+                        th Sku
+                        th MSRP
+                        th Category   
+                        th Image 						
+                        th Description
+                        th Action
+                    
+                    each product in productList
+                        tr
+                            td=product.title
+                            td=product.sku
+                            td $
+                              =product.msrp
+                            td=product.category
+                            td.image=product.image
+                            td=product.description
+                            td
+                                a(href='/crud/edit/'+product._id) Edit 
+                                br
+                                a(href='/crud/delete/'+product._id) Delete

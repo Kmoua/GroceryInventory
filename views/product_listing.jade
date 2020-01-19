@@ -1,0 +1,50 @@
+extends layout_form
+block content
+    .container
+        
+      .grid
+        each product in productList
+          .card
+            img.image-holder(src= product.image)
+            br 
+            strong= product.title
+            br 
+            $ 
+            = product.msrp
+        
+      footer
+        .col-3
+          h5 Help
+          ul
+            li
+              a(href='#') FAQs
+            li
+              a(href='#') Return Policy
+        .col-3
+          h5 About
+          ul
+            li
+              a(href='#') Company
+            li
+              a(href='#') Services
+            li
+              a(href='#') Contact
+            li
+              a(href='#') Career
+        .col-3
+          h5 Social
+          ul
+            li
+              a(href='#') Facebook
+            li
+              a(href='#') Instagram
+            li
+              a(href='#') Twitter
+            li
+              a(href='#') Youtube
+        .footer-2
+          div(style='font-size:.8em;')
+            a(href='#') Privacy Policy
+            |  
+            a(href='#') Terms & Conditions
+    // end .container

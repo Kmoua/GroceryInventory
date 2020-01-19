@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/styles.css')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js')
+		script(src='../javascript/validate.js')
+	body
+		nav.topnav
+			.edit-links
+				ul
+					li.nav-item
+						a.nav-link(href='/crud') EDIT
+					
+		nav.navbar
+			.primary-links
+				ul.navbar-nav
+					li.nav-item.logo
+						a.nav-link(href='/')
+							img(src='/images/logo.png')
+					li.nav-item
+						a.nav-link(href='/product_listing') Products
+					li.nav-item
+						a.nav-link(href='#') Services
+		block content

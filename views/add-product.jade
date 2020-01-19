@@ -1,0 +1,31 @@
+extends layout_form
+block content
+        div.container
+          .content(style='padding: 30px;')
+            h2 Add a Product
+              
+            form(action='/crud/add',method='post')
+                p=msg
+                label(for="title") Title
+                  input(type="text",name="title" required='')
+                label(for="sku") Sku
+                  input.tip(type="text",name="sku" pattern='[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}', required='', value='0000-0000')
+                label.tip(for="msrp") MSRP
+                  input(type="number", name="msrp" min='0.00', step='0.01', required='', value='0.00')  
+                label Product Category
+                select(required='', name='category', value='category')
+                  option(value='') Select...
+                  option Deli & Bakery
+                  option Meat & Seafood
+                  option Fresh Produce
+                  option Eggs & Dairy
+                  option Fruits & Vegetables
+                  option Beverages
+                p
+                label(for="image") Image
+                  input(type="text", name="image") 
+                p
+                label(for="title") Description
+                textarea(rows='8', cols='70',name="description")
+                p       
+                  input.button(type="submit")
