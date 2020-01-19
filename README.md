@@ -7,6 +7,7 @@ This application utilizes Jade, Express, Node.js, and MongoDB.
 
 # Install
 Download and install Node and npm (http://nodejs.org/#download). Then open terminal and type: node -v and npm -v to ensure it's installed.
+
 Install MongoDB using: npm install mongodb
 
 ![Screenshot](ProductView.jpg)
