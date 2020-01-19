@@ -7,5 +7,5 @@ This application utilizes Jade, Express, Node.js, and MongoDB.
 
 ![Screenshot](ProductView.jpg)
 ![Screenshot](UpdateProduct.jpg)
-![Screenshot](EditProduct.jpg)
+![Screenshot](AddProduct.jpg)
 ![Screenshot](Inventory.jpg)
